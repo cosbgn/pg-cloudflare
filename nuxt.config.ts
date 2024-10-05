@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 	future: { compatibilityVersion : 4 },
 	nitro: {
 		rollupConfig: {
-			external: ["cloudflare:sockets"],
+			external: ["cloudflare:sockets", "pg-native"],
 		}
 	},
 	devtools: { enabled: false }
