@@ -3,10 +3,10 @@ import postgres from "postgres";
 
 export default defineEventHandler(async (event) => {
 	const sql = postgres({
-		host                 : process.env.HOST,            // Postgres ip address[es] or domain name[s]
+		host                 : "endtype-prod-do-user-17847573-0.i.db.ondigitalocean.com",            // Postgres ip address[es] or domain name[s]
 		port                 : 25060,          // Postgres server port[s]
-		database             : process.env.DATABASE,            // Name of database to connect to
-		username             : process.env.USERNAME,            // Username of database user
+		database             : "defaultdb",            // Name of database to connect to
+		username             : "doadmin",            // Username of database user
 		password             : process.env.PASSWORD,            // Password of database user
 		ssl: { rejectUnauthorized: false }
 	})
